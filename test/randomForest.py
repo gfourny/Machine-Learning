@@ -128,6 +128,7 @@ plt.bar(x_values, importances, orientation = 'vertical')
 plt.xticks(x_values, feature_list, rotation='vertical')
 # Axis labels and title
 plt.ylabel('Importance'); plt.xlabel('Variable'); plt.title('Variable Importances');
+plt.show();
 
 # Dates of training values
 months = features[:, feature_list.index('month')]
@@ -156,6 +157,7 @@ plt.xticks(rotation = '60');
 plt.legend()
 # Graph labels
 plt.xlabel('Date'); plt.ylabel('Maximum Temperature (F)'); plt.title('Actual and Predicted Values');
+plt.show();
 
 # Make the data accessible for plotting
 true_data['temp_1'] = features[:, feature_list.index('temp_1')]
